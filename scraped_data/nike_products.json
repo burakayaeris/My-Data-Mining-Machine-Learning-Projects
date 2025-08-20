@@ -1,0 +1,29 @@
+[
+  {
+    "product_name": "Nike Air Force 1 Low",
+    "price_numeric": 90.0,
+    "rating": 4.5,
+    "reviews": 1250,
+    "availability_score": 1,
+    "category": "Shoes",
+    "scraped_at": "2025-08-20T13:20:06.732552"
+  },
+  {
+    "product_name": "Nike Air Force 1 High",
+    "price_numeric": 110.0,
+    "rating": 4.3,
+    "reviews": 890,
+    "availability_score": 1,
+    "category": "Shoes",
+    "scraped_at": "2025-08-20T13:20:06.732581"
+  },
+  {
+    "product_name": "Nike Air Force 1 Mid",
+    "price_numeric": 100.0,
+    "rating": 4.4,
+    "reviews": 567,
+    "availability_score": 0.5,
+    "category": "Shoes",
+    "scraped_at": "2025-08-20T13:20:06.732584"
+  }
+]

@@ -1,0 +1,21 @@
+Nike Product Data
+==================================================
+
+Product: Nike Air Force 1 Low
+Price: $90.00
+Rating: 4.5/5.0
+Reviews: 1250
+Availability: 1
+------------------------------
+Product: Nike Air Force 1 High
+Price: $110.00
+Rating: 4.3/5.0
+Reviews: 890
+Availability: 1
+------------------------------
+Product: Nike Air Force 1 Mid
+Price: $100.00
+Rating: 4.4/5.0
+Reviews: 567
+Availability: 0.5
+------------------------------

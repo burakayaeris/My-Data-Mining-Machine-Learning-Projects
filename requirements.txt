@@ -1,0 +1,14 @@
+# Web Scraping Dependencies for SeleniumBase CDP Mode and Undetected Testing
+seleniumbase>=4.39.6
+nodriver
+pyvirtualdisplay
+pdbp
+tabcompleter
+sbvirtualdisplay
+
+# Existing ML/Data Mining Dependencies
+pandas
+numpy
+matplotlib
+scikit-learn
+openpyxl
