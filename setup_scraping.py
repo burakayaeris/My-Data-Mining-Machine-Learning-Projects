@@ -23,10 +23,10 @@ def run_command(command, description=""):
 def install_dependencies():
     """Install required dependencies."""
     print("📦 Installing web scraping dependencies...")
-    
+
     # Upgrade pip first
     run_command(f"{sys.executable} -m pip install --upgrade pip", "Upgrading pip")
-    
+
     # Install from requirements.txt if it exists
     if os.path.exists("requirements.txt"):
         success = run_command(f"{sys.executable} -m pip install -r requirements.txt", "Installing from requirements.txt")
