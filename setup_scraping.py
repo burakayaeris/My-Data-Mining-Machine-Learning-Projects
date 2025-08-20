@@ -29,7 +29,8 @@ def install_dependencies():
     
     # Install from requirements.txt if it exists
     if os.path.exists("requirements.txt"):
-        run_command(f"{sys.executable} -m pip install -r requirements.txt", "Installing from requirements.txt")
+        success = run_command(f"{sys.executable} -m pip install -r requirements.txt", "Installing from requirements.txt")
+        return success
     else:
         # Install core dependencies manually
         dependencies = [
@@ -41,19 +42,26 @@ def install_dependencies():
             "sbvirtualdisplay",
             "pandas",
             "numpy",
-            "matplotlib"
+            "matplotlib",
+            "pyautogui",
+            "undetected-chromedriver"
         ]
-        
+        success = True
         for dep in dependencies:
-            run_command(f"{sys.executable} -m pip install {dep}", f"Installing {dep}")
+            if not run_command(f"{sys.executable} -m pip install {dep}", f"Installing {dep}"):
+                success = False
+        return success
 
 def setup_seleniumbase():
     """Set up SeleniumBase browser drivers."""
     print("🌐 Setting up SeleniumBase browser drivers...")
     
-    # Install browser drivers
-    run_command("seleniumbase install chromedriver", "Installing ChromeDriver")
-    run_command("seleniumbase install geckodriver", "Installing GeckoDriver")
+    success = True
+    if not run_command("seleniumbase install chromedriver", "Installing ChromeDriver"):
+        success = False
+    if not run_command("seleniumbase install geckodriver", "Installing GeckoDriver"):
+        success = False
+    return success
 
 def verify_installation():
     """Verify the installation by running a simple test."""
